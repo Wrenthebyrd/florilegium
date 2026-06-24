@@ -1,0 +1,54 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .bg { fill: #ece8db; }
+  .bg-inner { fill: #e4dfce; }
+  .border-outer { fill: none; stroke: #8c3b32; stroke-width: 2; }
+  .border-inner { fill: none; stroke: #cdc6b2; stroke-width: 1; }
+  .petal { fill: #8c3b32; opacity: 0.88; }
+  .leaf { fill: #5c6a4f; opacity: 0.85; }
+  .leaf-vein { fill: none; stroke: #3d4a33; stroke-width: 1.2; opacity: 0.4; }
+  .center { fill: #a4823c; }
+  .center-inner { fill: #c4a254; }
+  .stamen { fill: #a4823c; }
+  .stem { fill: none; stroke: #5c6a4f; stroke-width: 3; stroke-linecap: round; }
+  .ring { fill: none; stroke: #cdc6b2; stroke-width: 0.8; }
+  .dot { fill: #8c3b32; opacity: 0.5; }
+  .text-f { fill: #8c3b32; font-family: 'Cardo', Georgia, serif; font-size: 28px; font-weight: 700; letter-spacing: 0.18em; }
+  .text-sub { fill: #867c6c; font-family: 'Cardo', Georgia, serif; font-size: 11px; font-style: italic; letter-spacing: 0.08em; }
+  .ornament { fill: none; stroke: #cdc6b2; stroke-width: 1; }
+</style>
+<rect width="512" height="512" rx="64" class="bg"/>
+<rect x="16" y="16" width="480" height="480" rx="52" class="bg-inner"/>
+<rect x="28" y="28" width="456" height="456" rx="40" class="border-outer"/>
+<rect x="36" y="36" width="440" height="440" rx="34" class="border-inner"/>
+<g fill="#8c3b32">
+  <circle cx="56" cy="56" r="3"/><path d="M56 48 L56 40 M48 56 L40 56" stroke="#8c3b32" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <circle cx="456" cy="56" r="3"/><path d="M456 48 L456 40 M464 56 L472 56" stroke="#8c3b32" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <circle cx="56" cy="456" r="3"/><path d="M56 464 L56 472 M48 456 L40 456" stroke="#8c3b32" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <circle cx="456" cy="456" r="3"/><path d="M456 464 L456 472 M464 456 L472 456" stroke="#8c3b32" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</g>
+<circle cx="256" cy="236" r="120" class="ring"/>
+<circle cx="256" cy="236" r="130" class="ring" style="stroke-dasharray: 2 6;"/>
+<g class="dot"><circle cx="256" cy="106" r="2.5"/><circle cx="256" cy="366" r="2.5"/><circle cx="126" cy="236" r="2.5"/><circle cx="386" cy="236" r="2.5"/><circle cx="168" cy="148" r="2"/><circle cx="344" cy="148" r="2"/><circle cx="168" cy="324" r="2"/><circle cx="344" cy="324" r="2"/></g>
+<path d="M256 310 Q256 360 248 390" class="stem"/>
+<g class="leaf"><path d="M248 355 Q218 340 200 310 Q210 335 225 348 Q235 354 248 355Z"/><path d="M248 355 Q222 338 208 318" class="leaf-vein"/></g>
+<g class="leaf"><path d="M252 345 Q282 328 296 296 Q286 322 272 336 Q262 344 252 345Z"/><path d="M252 345 Q278 326 290 304" class="leaf-vein"/></g>
+<g class="leaf" opacity="0.6"><path d="M250 372 Q230 366 218 348 Q228 360 238 366 Q244 370 250 372Z"/></g>
+<path d="M256 236 Q240 190 256 148 Q272 190 256 236Z" class="petal"/>
+<path d="M256 236 Q298 208 336 224 Q300 226 256 236Z" class="petal"/>
+<path d="M256 236 Q290 268 288 312 Q270 274 256 236Z" class="petal"/>
+<path d="M256 236 Q222 268 224 312 Q242 274 256 236Z" class="petal"/>
+<path d="M256 236 Q214 208 176 224 Q212 226 256 236Z" class="petal"/>
+<path d="M256 236 Q248 198 256 162" fill="none" stroke="#6f2c25" stroke-width="1" opacity="0.3"/>
+<path d="M256 236 Q302 214 328 222" fill="none" stroke="#6f2c25" stroke-width="1" opacity="0.3"/>
+<path d="M256 236 Q282 272 284 302" fill="none" stroke="#6f2c25" stroke-width="1" opacity="0.3"/>
+<path d="M256 236 Q230 272 228 302" fill="none" stroke="#6f2c25" stroke-width="1" opacity="0.3"/>
+<path d="M256 236 Q210 214 184 222" fill="none" stroke="#6f2c25" stroke-width="1" opacity="0.3"/>
+<circle cx="256" cy="236" r="18" class="center"/>
+<circle cx="256" cy="236" r="11" class="center-inner"/>
+<g class="stamen"><circle cx="256" cy="220" r="2.5"/><circle cx="270" cy="230" r="2.5"/><circle cx="265" cy="248" r="2.5"/><circle cx="247" cy="248" r="2.5"/><circle cx="242" cy="230" r="2.5"/></g>
+<text x="256" y="430" text-anchor="middle" class="text-f">FLORILEGIUM</text>
+<line x1="160" y1="442" x2="352" y2="442" class="ornament"/>
+<circle cx="256" cy="442" r="2" fill="#8c3b32" opacity="0.7"/><circle cx="165" cy="442" r="1.5" class="dot"/><circle cx="347" cy="442" r="1.5" class="dot"/>
+<text x="256" y="462" text-anchor="middle" class="text-sub">a gathering of flowers</text>
+</svg>

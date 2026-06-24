@@ -1,0 +1,12 @@
+node_modules/
+package-lock.json
+package.json
+
+# Build/helper scripts
+restructure.js
+
+# Original monolithic file (kept locally, not needed in repo)
+florilegium-illustrated.html
+
+# Claude Code
+.claude/

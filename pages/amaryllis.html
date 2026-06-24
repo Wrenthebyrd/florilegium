@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Amaryllis — Florilegium</title>
+<meta name="description" content="The genus carries the name of Amaryllis, the lovesick shepherdess of Virgil's Eclogues and of Theocritus before him; the species-name belladonna, 'fair lad">
+<link rel="icon" type="image/svg+xml" href="../icon.svg">
+<link rel="apple-touch-icon" href="../icon.svg">
+<link rel="canonical" href="../index.html#amaryllis">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script>(function(){var t=localStorage.getItem('florilegium-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+  <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+</button>
+<div class="wrap">
+  <header class="masthead">
+    <svg class="crest" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 35V14"/>
+      <path d="M20 18c-3-2-7-1-9-4 3-1 7-1 9 4Z" fill="currentColor" fill-opacity=".12"/>
+      <path d="M20 22c3-2 7-1 9-4-3-1-7-1-9 4Z" fill="currentColor" fill-opacity=".12"/>
+      <circle cx="20" cy="9" r="4.5" fill="currentColor" fill-opacity=".12"/>
+      <path d="M20 4.5v9M15.5 9h9"/>
+    </svg>
+    <h1>Florilegium</h1>
+    <p class="sub">A Gathering of Flowers</p>
+    <p class="gloss">A herbal of plants and flowers — their names, their virtues, and the lore grown up around them.</p>
+  </header>
+  <div class="controls">
+    <div class="searchbar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="search" type="search" placeholder="Search by name, folk-name, or virtue…" autocomplete="off" aria-label="Search entries">
+      <span class="kbd">/</span>
+    </div>
+    <div class="tagrow" id="tagrow" role="group" aria-label="Filter by theme"></div>
+    <div class="alpha" id="alpha" role="navigation" aria-label="Alphabetical index"></div>
+  </div>
+  <div class="count" id="count"></div>
+  <main id="list"></main>
+  <footer>
+    <div class="frule"></div>
+    <p><em>Florilegium</em> — from the Latin <em>flos</em> (flower) and <em>legere</em> (to gather): a book of gathered flowers.</p>
+    <p style="margin-top:6px">Specimen plates are engraved illustrations; add a photograph URL to any entry’s <em>img</em> field to replace one.</p>
+  </footer>
+</div>
+<div class="scrim" id="scrim"></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Plant entry" tabindex="-1">
+  <div class="sheet-inner" id="sheetInner"></div>
+</aside>
+
+<script src="../js/main.js"></script>
+<script>openEntry('amaryllis');</script>
+</body>
+</html>
