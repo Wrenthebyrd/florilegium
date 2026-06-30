@@ -295,12 +295,14 @@ function openEntry(id,trigger){
   document.getElementById('closeBtn').onclick=closeEntry;
   document.getElementById('expandBtn').onclick=function(){$sheet.classList.toggle('fullscreen');this.setAttribute('aria-label',$sheet.classList.contains('fullscreen')?'Collapse to sidebar':'Expand to full width');this.setAttribute('title',$sheet.classList.contains('fullscreen')?'Collapse to sidebar':'Expand to full width');};
   $scrim.classList.add('show');$sheet.classList.add('show');
+  document.getElementById('themeToggle').style.display='none';
   document.body.style.overflow='hidden';
   $sheet.scrollTop=0;$sheet.focus();
   if(location.hash!=='#'+id){try{history.pushState({id},'','#'+id);}catch(e){}}
 }
 function closeEntry(){
   $scrim.classList.remove('show');$sheet.classList.remove('show');$sheet.classList.remove('fullscreen');
+  document.getElementById('themeToggle').style.display='';
   document.body.style.overflow='';
   if(location.hash){try{history.pushState({},'',location.pathname+location.search);}catch(e){}}
   if(lastFocus)lastFocus.focus();
@@ -313,7 +315,7 @@ window.addEventListener('keydown',e=>{
 window.addEventListener('popstate',()=>{
   const id=location.hash.slice(1);
   if(id&&PLANTS.find(x=>x._id===id))openEntry(id);
-  else if($sheet.classList.contains('show')){$scrim.classList.remove('show');$sheet.classList.remove('show');document.body.style.overflow='';}
+  else if($sheet.classList.contains('show')){$scrim.classList.remove('show');$sheet.classList.remove('show');document.getElementById('themeToggle').style.display='';document.body.style.overflow='';}
 });
 $search.addEventListener('input',()=>{query=$search.value.trim();render();});
 

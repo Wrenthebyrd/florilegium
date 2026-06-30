@@ -118,7 +118,7 @@ footer em{color:var(--ink-soft)}
 .entry{padding:22px 18px 0;position:relative}
 .entry-kicker{font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:6px}
 .entry h2{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,7vw,2.7rem);line-height:1;margin:0;letter-spacing:.01em}
-.dropcap{float:left;font-family:var(--serif);font-weight:700;color:var(--madder);font-size:4.6rem;line-height:.74;margin:6px 12px 0 0;padding:8px 12px;border:1px solid var(--gold);border-radius:6px;background:linear-gradient(180deg,var(--dropcap-grad-1),var(--dropcap-grad-2))}
+.dropcap{float:left;font-family:var(--serif);font-weight:700;color:var(--madder);font-size:4.6rem;line-height:.74;margin:6px 12px 0 0;padding:8px 12px;border:1px solid var(--gold);border-radius:6px;background:linear-gradient(180deg,var(--dropcap-grad-1),var(--dropcap-grad-2));overflow:hidden}
 .aka{font-family:var(--serif);font-style:italic;color:var(--ink-soft);margin:14px 0 0;font-size:1.02rem;clear:both}
 .aka b{font-style:normal;font-family:var(--sans);font-weight:600;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);display:block;margin-bottom:2px}
 .section{position:relative;margin:26px 0 0;padding-left:20px}
